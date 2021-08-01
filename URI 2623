@@ -1,0 +1,6 @@
+select prod.name,cat.name
+from products prod
+join categories cat on prod.id_categories = cat.id
+where prod.amount > 100 and (cat.id = 1 or cat.id = 2 or cat.id = 3 or
+cat.id = 6 or cat.id = 9)
+order by cat.id;
