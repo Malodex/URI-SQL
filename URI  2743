@@ -1,0 +1,4 @@
+select p.name,length(p.name)
+from people p
+group by 1
+order by 2 desc
